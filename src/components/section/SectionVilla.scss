@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import "assets/stylesheets/mixin";
+
+.SectionVilla {
+    padding: 40px 0;
+    @include media( md ) {
+        margin-bottom: 40px;
+    }
+}
+
+.containerFirst {
+    @include container( 1200px );
+    padding: 0 15px;
+    margin-top: 4rem;
+    h2 {
+        text-align: center;
+    }
+    @include media( md ) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.txtColFirst {
+    @include media( md ) {
+        padding: 0 60px;
+        width: 36.3%;
+    }
+    p {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        line-height: 1.65;
+        font-feature-settings: "palt" 1;
+        text-align: justify;
+        @include media( md ) {
+            margin-top: 5rem;
+        }
+    }
+}
+
+
+.container {
+    @include container( 1050px );
+    margin-top: 4rem;
+    padding: 0 15px;
+    @include media( md ) {
+        margin-top: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.image {
+    margin: {
+        left: -15px;
+        right: -15px;
+        bottom: 4rem;
+    }
+    text-align: center;
+    @include media( md ) {
+        margin: 0;
+    }
+}
+
+.txtCol {
+    @include media( md ) {
+        padding: 0 0 0 65px;
+        width: 52.6%;
+    }
+    header {
+        p {
+            margin-top: 1em;
+            color: #f6958d;
+        }
+    }
+    h2 {
+        img {
+            max-height: 14.08px;
+            @include media( sm ) {
+                max-height: none;
+            }
+        }
+    }
+    p {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+        line-height: 1.65;
+        text-align: justify;
+        @include media( md ) {
+            margin-top: 5rem;
+        }
+    }
+}
+.Btn {
+    @include BtnForm;
+}

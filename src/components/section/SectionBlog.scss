@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import "assets/stylesheets/mixin";
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 286px;
+    text-align: center;
+    background: url("/assets/images/top/bg_Blog001.jpg") right 9999px top 50% no-repeat,
+                url("/assets/images/top/bg_Blog002.png") left calc( 50% + 145px ) top 20% no-repeat;
+    @include media( sm ) {
+        background-position: right calc( 50% + 560px ) top 50%, left calc( 50% + 219px ) top 20% ;
+    }
+    h2 {
+        margin: 0;
+    }
+}
