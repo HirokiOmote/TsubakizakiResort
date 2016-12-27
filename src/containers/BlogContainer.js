@@ -73,7 +73,7 @@ class PostsContainer extends Component {
         console.log('PostsContainer:render');
 
         return (
-            <div className="article-listing">
+            <div className="containerTopBlog">
                 {this.buildPosts(posts)}
             </div>
         );

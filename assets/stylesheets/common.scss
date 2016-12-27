@@ -12,3 +12,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+:global(.containerTopBlog) {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1020px;
+    margin: 0px auto 70px;
+    padding: 10px 0;
+}

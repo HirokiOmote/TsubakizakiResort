@@ -34,11 +34,6 @@ module.exports = {
                 loaders: ['react-hot', 'babel?presets[]=es2015,presets[]=react'],
                 exclude: /node_modules/,
                 include: __dirname
-            // }, {
-            //     test: /\.jsx?$/,         // Match both .js and .jsx files
-            //     exclude: /node_modules/,
-            //     loader: "babel",
-
             }, {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract("style", "css")

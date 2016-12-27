@@ -4,8 +4,19 @@
 
 .BlogPostList {
     width: calc( 100% / 3 - 20px);
+    margin: {
+        top: 60px;
+        right: 20px;
+    }
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
 }
 
 .Thumbnail {
+    text-align: center;
+}
 
+.Title {
+    font-size: 1.5rem;
 }
